@@ -16,15 +16,15 @@ Dann `http://localhost:8080` im Browser öffnen. Die lokale Adresse ist nur auf 
 
 ## Website veröffentlichen
 
-Die Seite besteht aus statischen Dateien und benötigt weder Datenbank noch Server-Anwendung. Den **gesamten Inhalt dieses Ordners** auf einen HTTPS-fähigen statischen Webhost laden, zum Beispiel GitHub Pages oder Netlify. Die Dateien `index.html`, `app.js`, `styles.css`, `manifest.webmanifest`, `service-worker.js`, `brand-logo.png` und `icons/` müssen gemeinsam am selben Pfad veröffentlicht sein. Änderungen an der Website sind nach dem Hochladen unter der HTTPS-Adresse verfügbar.
+Die Website wird bei jedem Push nach `main` automatisch über GitHub Actions veröffentlicht. Die Adresse lautet: `https://roehnerkai8-png.github.io/Bergfriedn-re-upload/`. Den Deploy-Status sehen Sie im Repository unter **Actions**.
 
-## Auf dem iPhone hinzufügen
+## Im Browser installieren
 
-1. Die veröffentlichte HTTPS-Adresse in **Safari** öffnen.
-2. Auf **Teilen** tippen.
-3. **Zum Home-Bildschirm** auswählen und **Hinzufügen** antippen.
+1. Die HTTPS-Adresse in Chrome öffnen.
+2. Im Menü **⋮** auf **App installieren** oder **Zum Startbildschirm hinzufügen** tippen.
+3. Die App über das neue Symbol starten. Nach dem ersten Laden funktioniert die Oberfläche auch ohne Internet.
 
-Auf anderen Geräten können Sie die Schaltfläche **Installieren** oder den Installieren-Eintrag im Browser-Menü nutzen. Beim ersten Seitenaufruf werden App-Oberfläche, Logo und App-Symbole zwischengespeichert; danach funktioniert die Oberfläche auch ohne Internet. Erkennungs- und Aussprache-Funktionen hängen vom jeweiligen Gerät und Browser ab.
+Auf dem iPhone lässt sich die Adresse in Safari über **Teilen → Zum Home-Bildschirm** hinzufügen. Bei anderen Browsern und Geräten können die Menünamen abweichen. Erkennungs- und Aussprache-Funktionen hängen vom jeweiligen Gerät und Browser ab.
 
 ## Xcode-Projekt (optional)
 
